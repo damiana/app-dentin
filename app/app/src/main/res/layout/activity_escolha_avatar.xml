@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_escolha_personagens"
+    tools:context=".memoria.EscolhaAvatarMemoriaActivity">
+
+
+    <ImageButton
+        android:id="@+id/imgBtn_dentin"
+        android:layout_width="220dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginBottom="217dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtn_escova_lady"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/escolha_avatar_dentin" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_fio_dental_ninja"
+        android:layout_width="140dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="172dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBtn_dentin"
+        app:srcCompat="@drawable/escolha_avatar_fio_dental_ninja" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_escova_lady"
+        android:layout_width="156dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="54dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_dentin"
+        app:srcCompat="@drawable/escolha_avatar_lady_escova" />
+
+    <TextView
+        android:id="@+id/txt_escolha_personagem"
+        android:layout_width="247dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="408dp"
+        android:text="ESCOLHA SEU PERSONAGEM"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

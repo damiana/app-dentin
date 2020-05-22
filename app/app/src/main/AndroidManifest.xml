@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.br.dentin">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_dentin"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_dentin_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeDentin">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".AboutActivity"/>
+        <activity android:name=".memoria.EscolhaAvatarMemoriaActivity"/>
+        <activity android:name=".memoria.JogoMemoriaActivity"/>
+        <activity android:name=".memoria.JogoMemoriaMenuActivity"/>
+        <activity android:name=".puzzle.PuzzleMainActivity"/>
+        <activity android:name=".puzzle.PuzzleGameActivity"/>
+        <activity android:name=".sound.SoundBackgroundActivity"/>
+
+        <activity android:name=".VideosActivity"/>
+
+        <service android:name=".memoria.services.MemoriaService" />
+        <service android:name=".sound.BackgroundAudioService">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

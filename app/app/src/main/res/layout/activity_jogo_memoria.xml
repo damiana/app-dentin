@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".memoria.JogoMemoriaActivity">
+
+    <ImageView
+        android:id="@+id/back_avatar_dentin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/back_avatar_dentin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/back_avatar_fioDental"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/back_avatar_fio_dental"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/back_avatar_escovaLady"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/back_avatar_escova_lady"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:visibility="invisible"/>
+
+    <!-- <ImageView
+         android:id="@+id/img_avatarDentin"
+         android:layout_width="0dp"
+         android:layout_height="0dp"
+         android:layout_marginStart="24dp"
+         android:layout_marginTop="32dp"
+         android:layout_marginEnd="28dp"
+         android:layout_marginBottom="7dp"
+         android:visibility="invisible"
+         app:layout_constraintBottom_toTopOf="@+id/progressBar"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="1.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/avatar_dentin" />
+
+     <ImageView
+         android:id="@+id/img_avatarFioDental"
+         android:layout_width="0dp"
+         android:layout_height="129dp"
+         android:layout_marginStart="24dp"
+         android:layout_marginTop="32dp"
+         android:layout_marginEnd="28dp"
+         android:visibility="invisible"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/avatar_fio_dental" />
+
+     <ImageView
+         android:id="@+id/img_avatarEscovaLady"
+         android:layout_width="0dp"
+         android:layout_height="129dp"
+         android:layout_marginStart="24dp"
+         android:layout_marginTop="32dp"
+         android:layout_marginEnd="24dp"
+         android:visibility="invisible"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintHorizontal_bias="0.0"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+         app:srcCompat="@drawable/avatar_escola" /> -->
+
+    <TextView
+        android:id="@+id/txt_timer"
+        android:layout_width="61dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="000"
+        android:textColor="#F44336"
+        android:textSize="23dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="249dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="560dp"
+        android:max="100"
+        android:progress="0"
+        android:progressBackgroundTint="#FF5722"
+        android:progressTint="#F44336"
+        android:scaleY="4.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txt_timer" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="168dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <GridView
+            android:id="@+id/gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Dentin</string>
+    <string name="descricao_back_menu">Imagem de background do Menu</string>
+    <string name="descricao_btn_jogo_memoria">Logo do item Jogo da Memoria no Menu</string>
+    <string name="descricao_btn_quiz">Logo do item Quiz no Menu</string>
+    <string name="descricao_btn_videos">Logo do item Videos no Menu</string>
+    <string name="descricao_btn_sobre">Logo do item Sobre no Menu</string>
+
+    <string name="hey">Hey</string>
+    <string name="change">change</string>
+    <string name="move">move</string>
+    <string name="listen_message">Start</string>
+
+    <string name="descricao_txt_about">Este é um projeto de mestrado da UNIFESP - UNIVERSIDADE FEDERAL DE SÃO
+    PAULO. E tem como objeto orientar de forma lúdica crianças a cuidarem de sua saúde bucal. </string>
+
+    <string name="descricao_copiright">Copyright © 2020 | Damiana Costa | UNIFESP</string>
+
+</resources>
